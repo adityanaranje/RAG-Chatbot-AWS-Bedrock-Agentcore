@@ -1,0 +1,31 @@
+[project]
+name = "aws-bedrock"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "langgraph",
+    "langgraph_checkpoint_aws",
+    "langchain",
+    "langchain-community",
+    "langchain-core",
+    "langchain-openai",
+    "langchain-aws",
+    "faiss-cpu",
+    "tiktoken",
+    "bedrock-agentcore",
+    "bedrock-agentcore-starter-toolkit",
+    "boto3",
+    "requests>=2.31,<3",
+    "urllib3>=1.26,<2",
+    "charset-normalizer>=3,<4",
+    "langchain-groq"
+]
+
+[tool.setuptools.packages.find]
+exclude = ["documents*", "faiss_index*"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
