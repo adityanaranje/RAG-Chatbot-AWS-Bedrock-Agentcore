@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+aws_bedrock.egg-info/PKG-INFO
+aws_bedrock.egg-info/SOURCES.txt
+aws_bedrock.egg-info/dependency_links.txt
+aws_bedrock.egg-info/requires.txt
+aws_bedrock.egg-info/top_level.txt

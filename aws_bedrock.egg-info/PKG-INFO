@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: aws-bedrock
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: langgraph
+Requires-Dist: langgraph_checkpoint_aws
+Requires-Dist: langchain
+Requires-Dist: langchain-community
+Requires-Dist: langchain-core
+Requires-Dist: langchain-openai
+Requires-Dist: langchain-aws
+Requires-Dist: faiss-cpu
+Requires-Dist: tiktoken
+Requires-Dist: bedrock-agentcore
+Requires-Dist: bedrock-agentcore-starter-toolkit
+Requires-Dist: boto3
+Requires-Dist: requests<3,>=2.31
+Requires-Dist: urllib3<2,>=1.26
+Requires-Dist: charset-normalizer<4,>=3
+Requires-Dist: langchain-groq

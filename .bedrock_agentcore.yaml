@@ -1,0 +1,62 @@
+default_agent: fitness_rag_bot
+agents:
+  fitness_rag_bot:
+    name: fitness_rag_bot
+    language: python
+    node_version: '20'
+    entrypoint: V:/AWS Bedrock/main.py
+    deployment_type: container
+    runtime_type: null
+    platform: linux/arm64
+    container_runtime: none
+    source_path: V:\AWS Bedrock
+    aws:
+      execution_role: arn:aws:iam::903050880876:role/AmazonBedrockAgentCoreSDKRuntime-ap-south-1-dccb2cd0b5
+      execution_role_auto_create: false
+      account: '903050880876'
+      region: ap-south-1
+      ecr_repository: 903050880876.dkr.ecr.ap-south-1.amazonaws.com/bedrock-agentcore-fitness_rag_bot
+      ecr_auto_create: false
+      s3_path: null
+      s3_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+        network_mode_config: null
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+      lifecycle_configuration:
+        idle_runtime_session_timeout: null
+        max_lifetime: null
+    bedrock_agentcore:
+      agent_id: fitness_rag_bot-kGffiAFXpU
+      agent_arn: arn:aws:bedrock-agentcore:ap-south-1:903050880876:runtime/fitness_rag_bot-kGffiAFXpU
+      agent_session_id: 6e81b408-f89d-458e-9b5c-8a8ee02eedcc
+    codebuild:
+      project_name: bedrock-agentcore-fitness_rag_bot-builder
+      execution_role: arn:aws:iam::903050880876:role/AmazonBedrockAgentCoreSDKCodeBuild-ap-south-1-dccb2cd0b5
+      source_bucket: bedrock-agentcore-codebuild-sources-903050880876-ap-south-1
+    memory:
+      mode: STM_AND_LTM
+      memory_id: fitness_bot_memory-PC76eCGoqm
+      memory_arn: null
+      memory_name: fitness_rag_bot_memory
+      event_expiry_days: 30
+      first_invoke_memory_check_done: false
+      was_created_by_toolkit: false
+    identity:
+      credential_providers: []
+      workload: null
+    aws_jwt:
+      enabled: false
+      audiences: []
+      signing_algorithm: ES384
+      issuer_url: null
+      duration_seconds: 300
+    authorizer_configuration: null
+    request_header_configuration: null
+    oauth_configuration: null
+    api_key_env_var_name: null
+    api_key_credential_provider_name: null
+    is_generated_by_agentcore_create: false

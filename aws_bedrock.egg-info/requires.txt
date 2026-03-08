@@ -1,0 +1,16 @@
+langgraph
+langgraph_checkpoint_aws
+langchain
+langchain-community
+langchain-core
+langchain-openai
+langchain-aws
+faiss-cpu
+tiktoken
+bedrock-agentcore
+bedrock-agentcore-starter-toolkit
+boto3
+requests<3,>=2.31
+urllib3<2,>=1.26
+charset-normalizer<4,>=3
+langchain-groq
